@@ -82,10 +82,10 @@ loadPage();
 //Define a function fetchPrice(symbol)
 //Inside the promise,Use setTimeout to stimulate 2 seconds delay.
 //After 2seconds resolve the promise with message "Price foy [symbol] retrieved" 
-//Define an async function getPrices() to fetch prices sequentially
-//Inside getPrices(),Use wait to call fetchPrice('AAPL) and log the price
+//Define an async function Price() to fetch prices sequentially
+//Inside Price(),Use wait to call fetchPrice('AAPL) and log the price
 //Then use the await to call fetchPrice("GOOG") and log the price
-//call getPrice()
+//call Price()
 function fetchPrice(symbol) {
     return new Promise(resolve => {
         setTimeout(() => {
